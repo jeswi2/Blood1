@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<h1>Blood Donation Registration Form</h1>
+
+<div class="row g-3">
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+<label for="" class="form-label">Donor Name</label>
+<input type="text" placeholder="Enter the name of donar" class="form-control" name="name" [(ngModel)]="name">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+<label for="" class="form-label">Blood Group</label>
+<select name="" id="" class="form-control" name="Blood" [(ngModel)]="Blood">
+    <option value="select">---select---</option>
+    <option value="B">B/option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="A+">A+</option>
+    <option value="AB-">AB-</option>
+    <option value="AB+">AB+</option>
+    <option value="O+">O+</option>
+</select>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+<label for="" class="form-label">Date Of Birth</label>
+<input type="date" placeholder="Enter your DOB" class="form-control" name="dob" [(ngModel)]="dob">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="" class="form-label">Occupation</label>
+        <input type="text" placeholder="Enter your occupation" class="form-control" name="occupation" [(ngModel)]="occupation">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="" class="form-label">Any previous diseases</label>
+<select name="" id="" class="form-control" name="diseases" [(ngModel)]="diseases">
+    <option value="select">---select---</option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+</select>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="" class="form-label">Last Donate Date</label>
+<input type="date" placeholder="enter the last date of donation:" class="form-control" name="last_donate" [(ngModel)]="last_donate">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Address</label>
+        <textarea name="address" id="" cols="30" rows="10" placeholder="enter the address:" class="form-control" [(ngModel)]="address"></textarea>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="" class="form-label">Pincode</label>
+        <input type="text" placeholder="enter the pincode:" class="form-control" name="pincode" [(ngModel)]="pincode">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="" class="form-label">Mobile No:</label>
+        <input type="text" placeholder="enter the mobileno:" class="form-control" name="number" [(ngModel)]="number">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+<label for="" class="form-label">Email</label>
+<input type="email" placeholder="enter the mail id" class="form-control" name="email" [(ngModel)]="email">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<button class="btn btn-primary" (click)="readvalues()">Submit</button>
+<br><br>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
